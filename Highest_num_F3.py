@@ -20,13 +20,9 @@ def if_dict(val,high):
             high = if_dict(val[m],high)
             
         elif type(val[m]) in (str,complex):
-            if_str_comp()
-            print("No real number found in dictionary, hence a ZERO!")
-        
+            if_str_comp()        
 
     return high
-
-
 
 def if_list_tuple_set(val,high):
     
@@ -39,8 +35,7 @@ def if_list_tuple_set(val,high):
 
         elif type(j) in (list,tuple,set):
             high = if_list_tuple_set(j,high)
-            
-        
+                    
         elif type(j) in (str,complex):
             if_str_comp()
             
@@ -52,8 +47,7 @@ def if_int_float_bool(val,high):
         high = val
     return high
 
- 
-#d = [222,333,555555]       
+ #d = [222,333,555555]       
 
 d = {"fl":"39393.222","ineouron":{"a":2,"b":4,"c":{"ll":999,"ss":88837,"sss":{"383838":27727}}},'course':{'d':10,'e':123},"xyz":11113,"zzz":[22,{"sss":(22222,7373737373737)}],"s":{323,543,222,2222}}
 #d = {"sss":"sss","sss":3+4j}
