@@ -1,7 +1,6 @@
 #Enter Python code here and hit the Run button.
  
-
-'''def if_int_float_bool(val,high):
+def if_int_float_bool(val,high):
     if(val>high):
         return val
     else:
